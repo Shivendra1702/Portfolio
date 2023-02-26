@@ -1,0 +1,28 @@
+.card {
+  /* background-color: red; */
+  /* position: absolute; */
+  width: 10rem;
+  height: 13.2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: var(--orangeCard) 4px solid;
+  box-shadow: var(--boxShadow);
+}
+.card > img {
+    /* background-color: red; */
+  transform: scale(0.5);
+  margin-top: -3rem;
+}
+.card > :nth-child(2) {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: -3.5rem;
+}
+.card > :nth-child(3) {
+  font-size: 18px;
+}
+.card > :nth-child(4) {
+  margin: auto;
+}

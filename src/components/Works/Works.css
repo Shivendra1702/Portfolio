@@ -1,0 +1,72 @@
+.works {
+  padding: 0px 2rem;
+  height: 90vh;
+  display: flex;
+}
+.w-right {
+  position: relative;
+}
+.w-mainCircle {
+  position: relative;
+  width: 17rem;
+  height: 17rem;
+  left: 10rem;
+  top: 2rem;
+  background-color: white;
+  border-radius: 100%;
+  box-shadow: var(--smboxShadow);
+}
+.w-mainCircle > * {
+  position: absolute;
+}
+.w-mainCircle > :nth-child(1) {
+  top: -2rem;
+  left: 6rem;
+}
+.w-mainCircle > :nth-child(2) {
+  top: 6rem;
+  left: -2rem;
+}
+.w-mainCircle > :nth-child(3) {
+  top: 6rem;
+  left: 6rem;
+}
+.w-mainCircle > :nth-child(4) {
+  top: 13rem;
+  left: 6rem;
+}
+.w-mainCircle > :nth-child(5) {
+  top: 6rem;
+  left: 14rem;
+}
+.w-secCircle {
+  width: 5rem;
+  height: 5rem;
+  background-color: white;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--smboxShadow);
+  border: rgb(203, 203, 203) 3px solid;
+}
+.w-secCircle > img {
+  transform: scale(0.6);
+}
+.w-backCircle{
+  position: absolute;
+  width:11rem;
+  height:11rem;
+  border-radius: 100%;
+  z-index: -1;
+}
+.blueCircle{
+  background-color: #1949B8;
+  left: 19rem;
+  top:1.5rem;
+}
+.yellowCircle{
+  background-color:var(--yellow);
+  left: 19rem;
+  top:9rem;
+}
