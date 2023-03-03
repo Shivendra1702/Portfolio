@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  margin: -3.5rem -3.5rem -1rem -3.5rem;
+  margin: -3.5rem -3.5rem -3rem -3.5rem;
   display: flex;
   align-items: center;
 }
@@ -10,16 +10,36 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width:100%;
+  width: 100%;
   margin-top: 5rem;
-  gap:3rem;
+  gap: 1.5rem;
+}
+.f-content > span {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.f-content .f-icons {
+  display: flex;
+  gap: 3rem;
+}
 
-}
-.f-content>span{
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-.f-content .f-icons{
-    display: flex;
-    gap:2rem;
+@media screen and (max-width: 480px) {
+  
+  .footer img {
+    height: 16rem;
+  }
+  .f-content{
+    gap:0rem;
+    margin-top: 2rem;
+    margin-bottom: -1rem;
+  }
+  .f-content>span{
+    transform: scale(0.68);
+  }
+  .f-content>.f-icons{
+    transform: scale(0.7);
+  }
+  .f-content .f-icons {
+    gap: 2rem;
+  }
 }

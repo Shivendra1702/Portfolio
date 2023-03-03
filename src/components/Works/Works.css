@@ -1,6 +1,6 @@
 .works {
-  padding: 0px 2rem;
-  height: 90vh;
+  padding: 2rem 2rem 0rem 2rem;
+  height: 85vh;
   display: flex;
 }
 .w-right {
@@ -69,4 +69,17 @@
   background-color:var(--yellow);
   left: 19rem;
   top:9rem;
+}
+
+
+@media screen and (max-width: 480px) {
+  .works{
+    flex-direction: column;
+    padding: 0;    
+  }
+  .w-right{
+    transform: scale(0.65);
+    margin-top: -15rem;
+    left: -8rem;
+  }
 }

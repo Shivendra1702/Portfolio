@@ -12,7 +12,6 @@
 
 * {
   margin: 0;
-  /* padding: 0; */
   font-size: 20px;
   font-weight: normal;
   font-family: "Palanquin", sans-serif;
@@ -28,7 +27,7 @@
   border-radius: 34px;
   font-size: 18px;
   padding: 4px 26px 4px 26px;
-  border: none;
+  border: var(--orange) 1px solid;
   color: rgb(255, 255, 255);
   background: linear-gradient(180deg, #fdc50f 27%, #fb982f 99%);
   box-shadow: 0px 10px 10px 1px rgba(251, 161, 40, 0.42);
@@ -39,4 +38,10 @@
   background: white;
   border: var(--orange) 1px solid;
   cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .App {
+    padding: 1rem 1rem;
+  }
 }

@@ -11,7 +11,7 @@
   box-shadow: var(--boxShadow);
 }
 .card > img {
-    /* background-color: red; */
+  /* background-color: red; */
   transform: scale(0.5);
   margin-top: -3rem;
 }
@@ -25,4 +25,7 @@
 }
 .card > :nth-child(4) {
   margin: auto;
+}
+
+@media screen and (max-width: 480px) {
 }

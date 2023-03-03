@@ -1,8 +1,6 @@
 import React from "react";
 import "./Intro.css";
-import Github from "../../img/github.png";
-import LinkedIn from "../../img/linkedin.png";
-import Instagram from "../../img/instagram.png";
+
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
 import boy from "../../img/boy.png";
@@ -11,43 +9,68 @@ import crown from "../../img/crown.png";
 import glassesimoji from "../../img/glassesimoji.png";
 import FloatingDiv from "../FloatingDiv/FloatingDiv";
 
+import { themeContext } from "../../Context";
+import { useContext } from "react";
+import { motion } from "framer-motion";
+
 const Intro = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
+  const transition = { duration: 2, type: "spring" };
+
   return (
     <div className="intro">
       <div className="i-left">
         <div className="i-name">
-          <span>Hey! I Am</span>
+          <span
+            style={{
+              color: darkMode ? "white" : "black",
+            }}
+          >
+            Hey! I Am
+          </span>
           <span>Shivendra Pratap</span>
-          <span>
+          <span
+            style={{
+              color: darkMode ? "white" : "black",
+            }}
+          >
             Web Developer with high level of experience in web development ,
             producing the Quality work
           </span>
         </div>
         <button className="i-button button">Hire me</button>
-        <div className="i-icons">
-          <a href="https://github.com/Shivendra1702">
-            <img src={Github} alt="" />
-          </a>
-          <a href="http://www.linkedin.com/in/shivendra-pratap-jadia-076862225">
-            <img src={LinkedIn} alt="" />
-          </a>
-
-          <a href="https://www.instagram.com/shivendrapratap1702">
-            <img src={Instagram} alt="" />
-          </a>
-        </div>
       </div>
       <div className="i-right">
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
         <img src={boy} alt="" />
-        <img src={glassesimoji} alt="" />
-        <div style={{ top: "0rem", left: "20rem" }}>
+        <motion.img
+          transition={transition}
+          initial={{ left: "-35%" }}
+          whileInView={{ left: "-20%" }}
+          src={glassesimoji}
+          alt=""
+        />
+        <motion.div
+          className="fd1"
+          transition={transition}
+          initial={{ top: "-20%" }}
+          whileInView={{ top: "0%" }}
+          style={{ top: "0rem", left: "20rem" }}
+        >
           <FloatingDiv image={crown} txt1="Web" txt2="Developer" />
-        </div>
-        <div style={{ top: "16.1rem", left: "3.05rem" }}>
+        </motion.div>
+        <motion.div
+          className="fd2"
+          transition={transition}
+          initial={{ left: "-20%" }}
+          whileInView={{ left: "11%" }}
+          style={{ top: "16.1rem", left: "3.05rem" }}
+        >
           <FloatingDiv image={Thumbup} txt1="DevOps" txt2="Developer" />
-        </div>
+        </motion.div>
         <div
           className="blur"
           style={{

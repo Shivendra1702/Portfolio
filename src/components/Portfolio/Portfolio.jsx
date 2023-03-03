@@ -6,22 +6,30 @@ import Sidebar from "../../img/sidebar.png";
 import Ecommerce from "../../img/ecommerce.png";
 import HOC from "../../img/hoc.png";
 import MusicApp from "../../img/musicapp.png";
+import { Autoplay } from "swiper";
 
 const Portfolio = () => {
   return (
-    <div className="portfolio">
+    <div className="portfolio" id="Portfolio">
       {/* heading */}
       <span>Recent Projects</span>
       <span>Portfolio</span>
 
       {/* Slider */}
       <Swiper
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,          
+        }}
+        loop={true}
+        modules={[Autoplay]}
         spaceBetween={50}
         slidesPerView={3}
         grabCursor={true}
-        className="portfolio-slider"
+        className="portfolio-slider mySwiper"
+        rewind={true}
       >
-        <SwiperSlide>
+        <SwiperSlide >
           <img src={Sidebar} alt="" />
         </SwiperSlide>
         <SwiperSlide>

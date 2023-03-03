@@ -1,19 +1,34 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Works.css";
-import Upwork from "../../img/Upwork.png";
-import Fiverr from "../../img/fiverr.png";
-import Amazon from "../../img/amazon.png";
-import Shopify from "../../img/Shopify.png";
-import Facebook from "../../img/Facebook.png";
+import React_image from "../../img/react_s.png";
+import Nodejs_img from "../../img/nodejs.png";
+import Docker from "../../img/docker_i.png";
+import Jenkins from "../../img/jenkins.png";
+import Devops from "../../img/devops.png";
+import { themeContext } from "../../Context";
+import { motion } from "framer-motion";
 
 const Works = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className="works">
       {/* left side */}
       <div className="awesome">
-        <span>Works For All of these</span>
+        <span
+          style={{
+            color: darkMode ? "white" : "black",
+          }}
+        >
+          Works For All of these
+        </span>
         <span>Technologies</span>
-        <span>
+        <span
+          style={{
+            color: darkMode ? "white" : "black",
+          }}
+        >
           Experienced working in React , FireBase ,<br />
           And Hands on with Latest Demanding DevOps Tools ,<br />
           Such as Docker , Kubernetes , Ansible ,Terraform etc.
@@ -32,23 +47,29 @@ const Works = () => {
       </div>
       {/* right side*/}
       <div className="w-right">
-        <div className="w-mainCircle">
+        <motion.div
+          initial={{ rotate: 45 }}
+          whileInView={{ rotate: 0 }}
+          transition={{ duration: 3.5, type: "spring" }}
+          viewport={{ margin: "-40px" }}
+          className="w-mainCircle"
+        >
           <div className="w-secCircle">
-            <img src={Upwork} alt="" />
+            <img src={Docker} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
+            <img src={Jenkins} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Amazon} alt="" />
+            <img src={React_image} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Shopify} alt="" />
+            <img src={Nodejs_img} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Facebook} alt="" />
+            <img src={Devops} alt="" />
           </div>
-        </div>
+        </motion.div>
         <div className="w-backCircle blueCircle"></div>
         <div className="w-backCircle yellowCircle"></div>
       </div>
