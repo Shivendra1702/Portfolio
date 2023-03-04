@@ -75,15 +75,15 @@ const Intro = () => {
           className="blur"
           style={{
             background: "rgb(238, 210, 255)",
-            left: "17rem",
-            top: "-4rem",
+            // left: "17rem",
+            // top: "-4rem",
           }}
         ></div>
         <div
           className="blur"
           style={{
             background: "rgb(125, 214, 255)",
-            top: "5rem",
+            // top: "5rem",
           }}
         ></div>
       </div>
