@@ -6,7 +6,12 @@ const Card = ({ emoji, heading, detail }) => {
       <img src={emoji} alt="" />
       <span>{heading}</span>
       <span>{detail}</span>
-      <button className="button">Know More</button>
+      <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=shivendrapratapjadia@gmail.com"
+          target="_blank"
+        >
+          <button className="i-button button">Know More</button>
+        </a>
     </div>
   );
 };

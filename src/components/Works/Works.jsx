@@ -34,8 +34,12 @@ const Works = () => {
           Such as Docker , Kubernetes , Ansible ,Terraform etc.
         </span>
 
-        <button className="button s-button">Hire Me</button>
-        <div
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=shivendrapratapjadia@gmail.com"
+          target="_blank"
+        >
+          <button className="i-button button">Hire ME</button>
+        </a>        <div
           className="blur s-blur"
           style={{
             background: "rgb(180, 231, 255)",

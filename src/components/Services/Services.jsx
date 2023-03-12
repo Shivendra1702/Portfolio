@@ -35,7 +35,7 @@ const Services = () => {
           And Hands on with Latest Demanding DevOps Tools .
         </span>
 
-        <a href=".com" download>
+        <a href="http://www.linkedin.com/in/shivendra-pratap-jadia-076862225">
           <button className="button s-button">Download Resume</button>
         </a>
         <div

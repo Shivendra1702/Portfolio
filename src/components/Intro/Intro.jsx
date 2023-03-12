@@ -40,7 +40,13 @@ const Intro = () => {
             producing the Quality work
           </span>
         </div>
-        <button className="i-button button">Hire me</button>
+
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=shivendrapratapjadia@gmail.com"
+          target="_blank"
+        >
+          <button className="i-button button">Hire Me</button>
+        </a>
       </div>
       <div className="i-right">
         <img src={Vector1} alt="" />
